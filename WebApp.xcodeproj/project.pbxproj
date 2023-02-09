@@ -15,6 +15,9 @@
 		964672A12994256100BC8AD3 /* WebAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672A02994256100BC8AD3 /* WebAppUITests.swift */; };
 		964672A32994256100BC8AD3 /* WebAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672A22994256100BC8AD3 /* WebAppUITestsLaunchTests.swift */; };
 		964672B02994258E00BC8AD3 /* WebUIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672AF2994258E00BC8AD3 /* WebUIController.swift */; };
+		964672B32995AA9B00BC8AD3 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672B22995AA9B00BC8AD3 /* ChatMessage.swift */; };
+		964672B52995AACD00BC8AD3 /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672B42995AACD00BC8AD3 /* MessageSender.swift */; };
+		964672B72995AAFF00BC8AD3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672B62995AAFF00BC8AD3 /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		964672A02994256100BC8AD3 /* WebAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAppUITests.swift; sourceTree = "<group>"; };
 		964672A22994256100BC8AD3 /* WebAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		964672AF2994258E00BC8AD3 /* WebUIController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebUIController.swift; sourceTree = "<group>"; };
+		964672B22995AA9B00BC8AD3 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		964672B42995AACD00BC8AD3 /* MessageSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
+		964672B62995AAFF00BC8AD3 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +82,7 @@
 		964672792994255F00BC8AD3 = {
 			isa = PBXGroup;
 			children = (
+				964672B12995AA8900BC8AD3 /* Models */,
 				964672842994255F00BC8AD3 /* WebApp */,
 				964672952994256100BC8AD3 /* WebAppTests */,
 				9646729F2994256100BC8AD3 /* WebAppUITests */,
@@ -101,6 +108,7 @@
 				964672892994256100BC8AD3 /* Assets.xcassets */,
 				9646728B2994256100BC8AD3 /* Preview Content */,
 				964672AF2994258E00BC8AD3 /* WebUIController.swift */,
+				964672B62995AAFF00BC8AD3 /* ChatView.swift */,
 			);
 			path = WebApp;
 			sourceTree = "<group>";
@@ -128,6 +136,15 @@
 				964672A22994256100BC8AD3 /* WebAppUITestsLaunchTests.swift */,
 			);
 			path = WebAppUITests;
+			sourceTree = "<group>";
+		};
+		964672B12995AA8900BC8AD3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				964672B22995AA9B00BC8AD3 /* ChatMessage.swift */,
+				964672B42995AACD00BC8AD3 /* MessageSender.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +278,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				964672882994255F00BC8AD3 /* ContentView.swift in Sources */,
+				964672B32995AA9B00BC8AD3 /* ChatMessage.swift in Sources */,
+				964672B52995AACD00BC8AD3 /* MessageSender.swift in Sources */,
 				964672B02994258E00BC8AD3 /* WebUIController.swift in Sources */,
+				964672B72995AAFF00BC8AD3 /* ChatView.swift in Sources */,
 				964672862994255F00BC8AD3 /* WebAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -19,7 +19,8 @@ class WebUIController: UIViewController, WKNavigationDelegate {
         textView.isUserInteractionEnabled = true
         textView.text = "Hello world"
         
-        view = textView
+        //view = textView
+        view = ChatView
         
     }
     
