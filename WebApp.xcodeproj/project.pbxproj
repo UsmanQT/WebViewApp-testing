@@ -18,6 +18,7 @@
 		964672B32995AA9B00BC8AD3 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672B22995AA9B00BC8AD3 /* ChatMessage.swift */; };
 		964672B52995AACD00BC8AD3 /* MessageSender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672B42995AACD00BC8AD3 /* MessageSender.swift */; };
 		964672B72995AAFF00BC8AD3 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672B62995AAFF00BC8AD3 /* ChatView.swift */; };
+		964672B92995B15A00BC8AD3 /* View2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964672B82995B15A00BC8AD3 /* View2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		964672B22995AA9B00BC8AD3 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		964672B42995AACD00BC8AD3 /* MessageSender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageSender.swift; sourceTree = "<group>"; };
 		964672B62995AAFF00BC8AD3 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		964672B82995B15A00BC8AD3 /* View2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				964672B22995AA9B00BC8AD3 /* ChatMessage.swift */,
 				964672B42995AACD00BC8AD3 /* MessageSender.swift */,
+				964672B82995B15A00BC8AD3 /* View2.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				964672B32995AA9B00BC8AD3 /* ChatMessage.swift in Sources */,
 				964672B52995AACD00BC8AD3 /* MessageSender.swift in Sources */,
 				964672B02994258E00BC8AD3 /* WebUIController.swift in Sources */,
+				964672B92995B15A00BC8AD3 /* View2.swift in Sources */,
 				964672B72995AAFF00BC8AD3 /* ChatView.swift in Sources */,
 				964672862994255F00BC8AD3 /* WebAppApp.swift in Sources */,
 			);

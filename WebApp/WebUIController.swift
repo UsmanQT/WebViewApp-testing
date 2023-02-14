@@ -9,18 +9,24 @@ import UIKit
 import WebKit
 class WebUIController: UIViewController, WKNavigationDelegate {
     var webView: WKWebView!
-    
+    var chatView = ChatView()
+    //var MyChat = MyChatView()
     override func loadView() {
+        
         let textView = UITextView()
+        
         webView = WKWebView.init(frame: CGRect.zero)
         webView.navigationDelegate = self
-        textView.autocapitalizationType = .sentences
-        textView.isSelectable = true
-        textView.isUserInteractionEnabled = true
-        textView.text = "Hello world"
-        
-        //view = textView
-        view = ChatView
+//        textView.autocapitalizationType = .sentences
+//        textView.isSelectable = true
+//        textView.isUserInteractionEnabled = true
+//        textView.text = "Hello world"
+        //webView.addSubview(chatView)
+        //chatView = ChatView(frame: .zero)
+    
+        //chatView.isUserInteractionEnabled = true
+        //self.view = chatView
+        view = chatView
         
     }
     
@@ -40,8 +46,17 @@ class WebUIController: UIViewController, WKNavigationDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = URL(string: "https://you.com/search?q=what%20date%20is%20today&tbm=youchat")!
+        let url = URL(string: "https://you.com/search?q=where+is+gvsu&fromSearchBar=true&tbm=youchat")!
         webView.load(URLRequest(url: url))
+        
+        //webView = WKWebView(frame: view.bounds)
+        //view.addSubview(webView)
+        
+        chatView.setNeedsDisplay(CGRect(x: 0, y: 0, width: 200, height: 200) )
+        //chatView.addSubview(MyChat)
+        //chatView = UIView(frame: CGRect(x: 0, y: 0, width: 200, height: 200))
+        //chatView.backgroundColor = .red
+        webView.addSubview(chatView)
     }
 }
 
